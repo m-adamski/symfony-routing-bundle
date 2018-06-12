@@ -1,0 +1,15 @@
+services:
+    routing_bundle.helper.routing:
+        class: Adamski\Symfony\RoutingBundle\Helper\RoutingHelper
+        arguments:
+            - "@router"
+
+    Adamski\Symfony\RoutingBundle\Helper\RoutingHelper:
+        alias: routing_bundle.helper.routing
+
+    routing_bundle.twig.extension.route_path:
+        class: Adamski\Symfony\HelpersBundle\Twig\RoutePathExtension
+        arguments:
+            - "@routing_bundle.helper.routing"
+        tags:
+            - { name: twig.extension }
