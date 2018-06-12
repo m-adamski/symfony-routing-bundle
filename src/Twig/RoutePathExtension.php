@@ -1,6 +1,6 @@
 <?php
 
-namespace Adamski\Symfony\HelpersBundle\Twig;
+namespace Adamski\Symfony\RoutingBundle\Twig;
 
 use Adamski\Symfony\RoutingBundle\Helper\RoutingHelper;
 use Twig\Extension\AbstractExtension;

@@ -8,7 +8,7 @@ services:
         alias: routing_bundle.helper.routing
 
     routing_bundle.twig.extension.route_path:
-        class: Adamski\Symfony\HelpersBundle\Twig\RoutePathExtension
+        class: Adamski\Symfony\RoutingBundle\Twig\RoutePathExtension
         arguments:
             - "@routing_bundle.helper.routing"
         tags:
